@@ -1,3 +1,5 @@
+Need to use yarn to build (yarn && yarn run build); using pnp would result in "electron-tuil-runtime" not found.
+
 This repo contains the **bare minimum code** to have an auto-updating Electron app using [`electron-updater`](https://github.com/electron-userland/electron-builder/tree/master/packages/electron-updater) with releases stored on GitHub.
 
 If you can't use GitHub, you can use other providers:
@@ -10,7 +12,7 @@ If you can't use GitHub, you can use other providers:
 1. For macOS, you will need a code-signing certificate.
 
     Install Xcode (from the App Store), then follow [these instructions](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html#//apple_ref/doc/uid/TP40012582-CH31-SW6) to make sure you have a "Developer ID Application" certificate.  If you'd like to export the certificate (for automated building, for instance) [you can](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html#//apple_ref/doc/uid/TP40012582-CH31-SW7).  You would then follow [these instructions](https://www.electron.build/code-signing).
-   
+
     This example application is set up to perform code-signing and notarization on Mac OS provided that a `Developer ID
     Application` certificate is installed in the default keychain.  The following environment variables are important for the signing process:
 

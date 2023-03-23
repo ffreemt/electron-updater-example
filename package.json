@@ -1,21 +1,23 @@
 {
   "name": "electron-updater-example",
-  "version": "0.8.2",
+  "version": "0.1.0",
   "main": "main.js",
   "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "author": "Matt Haggard/John Dyer",
   "scripts": {
+    "start": "electron .",
     "publish": "electron-builder -p always",
-    "builder": "electron-builder"
+    "build": "electron-builder --win --publish never",
+    "build2": "electron-builder  --mac --win --publish never"
   },
   "devDependencies": {
-    "electron": "^14.0.1",
-    "electron-builder": "^22.11.7",
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0",
     "electron-notarize": "^1.1.1"
   },
   "dependencies": {
     "electron-log": "^4.4.1",
-    "electron-updater": "^4.3.9"
+    "electron-updater": "^5.3.0"
   },
   "build": {
     "appId": "com.github.ffreemt.electronupdaterexample",
