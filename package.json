@@ -5,7 +5,8 @@
   "description": "electron-updater example project",
   "author": "Matt Haggard",
   "scripts": {
-    "publish": "electron-builder -p always"
+    "publish": "electron-builder -p always",
+    "builder": "electron-builder"
   },
   "devDependencies": {
     "electron": "^14.0.1",
