@@ -5,7 +5,7 @@
   "description": "electron-updater example project",
   "author": "Matt Haggard/John Dyer",
   "scripts": {
-    "start": "electron .",
+    "start": "electron --trace-warnings .",
     "publish": "electron-builder -p always",
     "build": "electron-builder --win --publish never",
     "build2": "electron-builder  --mac --win --publish never"
@@ -16,8 +16,11 @@
     "electron-notarize": "^1.1.1"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "electron-log": "^4.4.1",
-    "electron-updater": "^5.3.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^5.3.0",
+    "tracer": "^1.1.6"
   },
   "build": {
     "appId": "com.github.ffreemt.electronupdaterexample",
