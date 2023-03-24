@@ -26,7 +26,7 @@ autoUpdater.setFeedURL({
   repo: 'electron-updater-example',
   releaseType: 'release',
   tagName: 'v' + app.getVersion(),
-  accessToken: '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',
+  accessToken: 'in snippet example-gh_token.txt',
 })
 // */
 // console.log(app)
