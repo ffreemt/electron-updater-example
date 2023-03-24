@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard/John Dyer",
@@ -31,7 +31,9 @@
     },
     "win": {
       "target": "nsis",
-      "publish": ["github"]
+      "publish": [
+        "github"
+      ]
     },
     "nsis": {
       "oneClick": false
